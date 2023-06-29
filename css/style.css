@@ -1,10 +1,14 @@
+html {
+  font-size: 14px;
+}
+
 .container {
   max-width: 1020px;
   margin: 0 auto;
 }
 
 .section-title {
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 
 .header {
@@ -25,6 +29,7 @@
 
 .index {
   padding: 30px 20px;
+  margin-bottom: -5px;
 }
 .index .section-title {
   text-align: center;
@@ -40,6 +45,21 @@
   border: 1px solid black;
 }
 .index__item {
-  font-size: 14px;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.photos {
+  padding: 30px 20px;
+  margin-bottom: 35px;
+}
+.photos__main {
+  padding: 0px;
+}
+.photos__item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.photos__item > img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

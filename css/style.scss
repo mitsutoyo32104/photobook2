@@ -15,11 +15,12 @@
 }
 
 .mainvisual {
-    margin-bottom: 35px;
+    margin-bottom: $sectinMgBottom;
 }
 
 .index {
     padding: 30px 20px;
+    margin-bottom: $sectinMgBottom - 40px;
     
     & .section-title {
         text-align: center;
@@ -38,7 +39,26 @@
     }
 
     &__item {
-        font-size: $defaultFontSize;
         margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+
+.photos {
+    padding: 30px 20px;
+    margin-bottom: $sectinMgBottom;
+
+    &__main {
+        padding: 0px;
+    }
+
+    &__item {
+        list-style: none;
+        margin-bottom: 20px;
+
+        & > img {
+            width: 100%;
+        }
     }
 }
