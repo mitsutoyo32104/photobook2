@@ -1,8 +1,14 @@
+@use 'variables' as *;
+
+html {
+    font-size: $defaultFontSize;
+}
+
 .container {
     max-width: 1020px;
     margin: 0 auto;
 }
 
 .section-title {
-    font-size: 18px;
+    font-size: 1.3rem;
 }
