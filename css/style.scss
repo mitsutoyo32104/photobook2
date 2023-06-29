@@ -21,11 +21,6 @@
 .index {
     padding: 30px 20px;
     margin-bottom: $sectinMgBottom - 40px;
-    
-    & .section-title {
-        text-align: center;
-        margin-bottom: 30px;
-    }
 
     &__inner {
         background-color: rgb(246, 246, 246);
@@ -39,8 +34,12 @@
     }
 
     &__item {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         text-align: center;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -51,14 +50,71 @@
 
     &__main {
         padding: 0px;
+
+        @include mq() {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }    
     }
 
     &__item {
         list-style: none;
         margin-bottom: 20px;
 
+        @include mq() {
+            margin-bottom: 0;
+        }
+
         & > img {
             width: 100%;
         }
+    }
+}
+
+
+.detail {
+    padding: 0 20px;
+    margin-bottom: $sectinMgBottom;
+
+    &__inner {
+        padding: 30px 20px;
+        background-color: rgb(246, 246, 246);
+    }
+
+    &__main {
+        padding-bottom: 40px;
+        border-bottom: 1px solid black;
+    }
+
+    &__term {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    &__detail {
+        margin-bottom: 10px;
+    }
+
+    &__introduction {
+        padding-top: 40px;
+        margin-bottom: 10px;
+
+        & > p {
+            margin-bottom: 20px;
+        }
+    }
+
+    & .to-store {
+        color: black;
+    }
+}
+
+.footer {
+    & > p {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-size: 0.5rem;
+        text-align: center;
     }
 }
