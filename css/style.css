@@ -1,0 +1,45 @@
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 18px;
+}
+
+.header {
+  margin: 60px 0 15px 0;
+  padding: 0 10px;
+}
+.header .site-title {
+  width: 180px;
+}
+.header .site-title > img {
+  display: block;
+  width: 100%;
+}
+
+.mainvisual {
+  margin-bottom: 35px;
+}
+
+.index {
+  padding: 30px 20px;
+}
+.index .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.index__inner {
+  background-color: rgb(246, 246, 246);
+  padding: 40px 20px;
+}
+.index__main {
+  padding: 30px 15px;
+  list-style-position: inside;
+  border: 1px solid black;
+}
+.index__item {
+  font-size: 14px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
