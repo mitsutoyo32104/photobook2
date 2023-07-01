@@ -55,16 +55,15 @@ html {
 .mainvisual .cover-slide.inview::before {
   animation-name: kf-cover-slide;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-delay: 0s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
-
-.inview .img-zoom {
+.mainvisual .cover-slide.inview .img-zoom {
   animation-name: kf-img-show;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-delay: 0s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: none;
@@ -81,11 +80,11 @@ html {
   }
   50.1% {
     transform: scaleX(1);
-    transform-origin: center;
+    transform-origin: right;
   }
   100% {
-    transform: scaleY(0);
-    transform-origin: center;
+    transform: scaleX(0);
+    transform-origin: right;
   }
 }
 @keyframes kf-img-show {
@@ -177,7 +176,7 @@ html {
 .detail__introduction > p {
   margin-bottom: 20px;
 }
-.detail .to-store {
+Z .detail .to-store {
   color: black;
 }
 
